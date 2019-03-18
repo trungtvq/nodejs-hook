@@ -8,7 +8,6 @@ async function pull_ov() {
   console.log('out:', stdout);
   console.log('err:', stderr);
 }
-ls();
 app.set('view engine','ejs');
 app.use('/assets',express.static('assets'));
 app.get('/dashboard',(req,res)=>{
