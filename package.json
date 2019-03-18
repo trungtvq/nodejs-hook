@@ -1,0 +1,23 @@
+{
+  "name": "overlead-server",
+  "version": "1.0.0",
+  "description": "Server API helper",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trungtvq/overlead-server.git"
+  },
+  "author": "trungtvq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trungtvq/overlead-server/issues"
+  },
+  "homepage": "https://github.com/trungtvq/overlead-server#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
