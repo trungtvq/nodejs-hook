@@ -23,7 +23,7 @@ app.get('/login',(req,res)=>{
 app.get('/cover',(req,res)=>{
     res.render('cover');
 })
-app.get('/pull',(req,res)=>{
+app.post('/pull',(req,res)=>{
     pull_ov();
     res.json({status:"sucess"});
 })
