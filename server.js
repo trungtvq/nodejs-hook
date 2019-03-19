@@ -4,7 +4,7 @@ const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 
 async function pull_ov() {
-  const { stdout, stderr } = await exec('cd /home/trung/apps/client && git pull && npm install && npm run build && cd /home/trung/apps/server && git pull && npm install');
+  const { stdout, stderr } = await exec('cd /home/trung/apps/server && git pull && npm install && cd /home/trung/apps/client && git pull && npm install && npm run build');
   console.log('out:', stdout);
   console.log('err:', stderr);
 }
