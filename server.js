@@ -4,7 +4,7 @@ const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 
 async function pull_ov() {
-  const { stdout, stderr } = await exec('export PATH=~/.npm-global/bin:$PATH && source .profile && pm2 delete ov-client && pm2 delete ov-server && cd /home/tr/server && git checkout -- . && git pull && npm install && cd /home/tr/client && git checkout -- . && git pull && npm install && npm run build && pm2 start && cd /home/tr/server && pm2 start');
+  const { stdout, stderr } = await exec('cd /home/trung/app/server && git checkout -- . && git pull && npm install && cd /home/trung/app/client && git checkout -- . && git pull && npm install && npm run build');
   console.log('out:', stdout);
   console.log('err:', stderr);
 }
